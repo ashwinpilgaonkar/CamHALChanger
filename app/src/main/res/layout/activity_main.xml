@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ashwinpilgaonkar.camhalchanger.MainActivity"
+    android:weightSum="1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <Button
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="@string/stock_hal"
+        android:id="@+id/StockHAL_Button"
+        android:layout_below="@+id/SultanHAL_Button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="@string/sultan_hal"
+        android:id="@+id/SultanHAL_Button"
+        android:layout_below="@+id/Status_TextView"
+        android:layout_alignEnd="@+id/Status_TextView"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="@string/backup"
+        android:id="@+id/BackupStock_Button"
+        android:layout_below="@+id/CameraLauncher_Button"
+        android:layout_alignStart="@+id/CameraLauncher_Button" />
+
+    <Button
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="@string/launch_camera"
+        android:id="@+id/CameraLauncher_Button"
+        android:layout_below="@+id/StockHAL_Button"
+        android:layout_alignStart="@+id/StockHAL_Button"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/status"
+        android:id="@+id/Static_Status"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/switch_to_sultan_apos_s_hal"
+        android:id="@+id/Static_SwitchSultan"
+        android:gravity="fill"
+        android:layout_alignBottom="@+id/SultanHAL_Button"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/SultanHAL_Button"
+        android:layout_alignEnd="@+id/Static_SwitchStock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/switch_to_stock_hal"
+        android:id="@+id/Static_SwitchStock"
+        android:gravity="fill"
+        android:layout_below="@+id/SultanHAL_Button"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/Static_LaunchCamera"
+        android:layout_alignBottom="@+id/StockHAL_Button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/launch_camera_app"
+        android:id="@+id/Static_LaunchCamera"
+        android:gravity="fill"
+        android:layout_alignBottom="@+id/CameraLauncher_Button"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/CameraLauncher_Button"
+        android:layout_toStartOf="@+id/CameraLauncher_Button"
+        android:layout_alignEnd="@+id/Static_Backup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/backup_stock_hal_files"
+        android:id="@+id/Static_Backup"
+        android:gravity="fill"
+        android:layout_alignTop="@+id/BackupStock_Button"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10px"
+        android:paddingBottom="5px"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:src="@android:drawable/divider_horizontal_bright"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/Status_TextView"
+        android:layout_alignEnd="@+id/SultanHAL_Button"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/currently_enabled"
+        android:gravity="center"
+        android:textSize="42sp"
+        android:textAllCaps="true"
+        android:textColor="#e6e6e6"
+        android:id="@+id/Status_TextView"
+        android:layout_below="@+id/Static_Status"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="4dp" />
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HAL Switcher</string>
+    <string name="sultan_hal">Apply</string>
+    <string name="stock_hal">Apply</string>
+    <string name="launch_camera">Camera</string>
+    <string name="backup">Backup</string>
+    <string name="currently_enabled">STOCK HAL</string>
+    <string name="status">STATUS</string>
+    <string name="switch_to_stock_hal">Switch to Stock HAL</string>
+    <string name="backup_stock_hal_files">Backup Stock HAL files</string>
+    <string name="launch_camera_app">Launch Camera app</string>
+    <string name="switch_to_sultan_apos_s_hal">Switch to Sultan\'s HAL</string>
+</resources>
