@@ -13,6 +13,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -134,16 +135,16 @@ public class MainActivity extends AppCompatActivity{
                 new Button.OnClickListener() {
                     public void onClick(View V) {
 
-                        String[] commands = {"cp system/lib/hw/camera.msm8974.so system/lib/hw/camera.msm8974.so.stock",
+                        String[] commands = {"mv system/lib/hw/camera.msm8974.so system/lib/hw/camera.msm8974.so.stock",
 
-                                "cp system/lib/libmmcamera_interface.so system/lib/libmmcamera_interface.so.stock",
-                                "cp system/lib/libmmjpeg_interface.so system/lib/libmmjpeg_interface.so.stock",
-                                "cp system/lib/libqomx_core.so system/lib/libqomx_core.so.stock",
+                                "mv system/lib/libmmcamera_interface.so system/lib/libmmcamera_interface.so.stock",
+                                "mv system/lib/libmmjpeg_interface.so system/lib/libmmjpeg_interface.so.stock",
+                                "mv system/lib/libqomx_core.so system/lib/libqomx_core.so.stock",
 
-                                "cp system/vendor/lib/libchromatix_s5k3m2_hfr_60fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_60fps.so.stock",
-                                "cp system/vendor/lib/libchromatix_s5k3m2_hfr_90fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_90fps.so.stock",
-                                "cp system/vendor/lib/libchromatix_s5k3m2_hfr_120fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_120fps.so.stock",
-                                "cp system/vendor/lib/libmmjpeg.so system/vendor/lib/libmmjpeg.so.stock"};
+                                "mv system/vendor/lib/libchromatix_s5k3m2_hfr_60fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_60fps.so.stock",
+                                "mv system/vendor/lib/libchromatix_s5k3m2_hfr_90fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_90fps.so.stock",
+                                "mv system/vendor/lib/libchromatix_s5k3m2_hfr_120fps.so system/vendor/lib/libchromatix_s5k3m2_hfr_120fps.so.stock",
+                                "mv system/vendor/lib/libmmjpeg.so system/vendor/lib/libmmjpeg.so.stock"};
 
                         MoveFilesTask task = new MoveFilesTask(getApplicationContext());
                           task.execute(commands);
